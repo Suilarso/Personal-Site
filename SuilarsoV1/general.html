@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<!--
+    Author: Suilarso Japit
+    Date: Mar 16, 2018
+    Filename: general.html
+    Purpose: This is the general page to my personal web page.
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="My Journey">
+    <meta name="author" content="Suilarso Japit">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>General</title>  <!-- SJ5160318 - Change the title that is more appropreate to this page -->
+
+    <!-- SJ0180318 - Start of menu style -->
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333333;
+            background-color:rgb(238, 217, 172);
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            background-color: #111111;
+        }
+
+        .rowId:nth-child(even) {
+            background-color: rgba(204, 188, 188, 0.212);
+        }
+    </style>
+    <!-- SJ0180318 - End of menu style -->
+
+</head>
+<body>
+
+    <!-- SJ6100318 - This section contains main title and navigation items -->
+    <header class="headerID">
+        <div id="mainMenu">
+            <h1>Suilarso Japit</h1>
+            <nav class="navBar">
+                <ul>
+                    <li>
+                        <a href="index.html" title="Suilarso's site" class="active">Home</a>
+                    </li>
+                    <li>
+                        <a href="general.html" title="General topic">General</a>
+                    </li>
+                    <li>
+                        <a href="gallery.html" title="Suilarso's photo">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="about.html" title="About me">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" title="Contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <hr>
+    </header>
+
+    <div id="generalID">
+        <!-- SJ6240318 - Creating table to describe career history -->
+        <section class="tableClass">
+          <a name="careerTab"></a>
+          <h2>Career History</h2>
+          <table border="1" cellpadding="5" cellspacing="0" style="text-align: center;">
+            <thead>
+                <tr bgcolor="#2a4c4c" style="color:white;">
+                    <th>Company</th>
+                    <th>Position</th>
+                    <th>From</th>
+                    <th>To</th>
+                    <th>Link</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr class="rowId">
+                    <td><a href="https://www.umbrela.co/" target="_blank">Umbrela Smart</a></td>
+                    <td>Embedded Linux Developer (Internship)</td>
+                    <td>Oct 2017</td>
+                    <td>Nov 2017</td>
+                    <a name="ORG1"></a>
+                    <td><a href="./detail.html#det_1"><img src="./img/link.png" width="25" height="25" title="Click for details"></a></td>
+                </tr>
+                <tr class="rowId">
+                    <td><a href="http://www.sanmina.com/" target="_blank">Sanmina</a></td>
+                    <td>Senior Software Engineer</td>
+                    <td>Oct 2015</td>
+                    <td>May 2017</td>
+                    <a name="ORG2"></a>
+                    <td><a href="./detail.html#sanminaDet"><img src="./img/link.png" width="25" height="25" title="Click for details"></a></td>
+                </tr>
+                <tr class="rowId">
+                    <td><a href="http://www.aztech-group.com/" target="_blank">Aztech Tehnologies</a></td>
+                    <td>Principal R&amp;D Engineer</td>
+                    <td>Jul 2005</td>
+                    <td>Sep 2015</td>
+                    <a name="ORG3"></a>
+                    <td><a href="./detail.html#aztechDet"><img src="./img/link.png" width="25" height="25" title="Click for details"></a></td>
+                </tr>
+                <tr class="rowId">
+                    <td><a href="https://en.wikipedia.org/wiki/Nakamichi" target="_blank">Nakamichi Research</a></td>
+                    <td>Senior Software Engineer</td>
+                    <td>Oct 2003</td>
+                    <td>Jul 2005</td>
+                    <a name="ORG4"></a>
+                    <td><a href="./detail.html#nakaDet"><img src="./img/link.png" width="25" height="25" title="Click for details"></a></td>
+                </tr>
+                <tr class="rowId">
+                    <td>Tectron</td>
+                    <td>Senior Software Engineer</td>
+                    <td>Aug 2001</td>
+                    <td>Sep 2003</td>
+                    <a name="ORG5"></a>
+                    <td><a href="./detail.html#TectronDet"><img src="./img/link.png" width="25" height="25" title="Click for details"></a></td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="5" bgcolor="black" style="color:white;">TBD</td>
+                </tr>
+            </tfoot>
+
+          </table>
+        </section>
+        <br>
+        <hr>
+
+        <!-- SJ6240318 - Creating table to describe projects history -->
+        <section class="tableClass">
+          <a name="projectTab"></a>
+          <h2>Projects</h2>
+          <table border="1" cellpadding="5" cellspacing="0" style="text-align: center;">
+            <thead>
+                <tr bgcolor="#2a4c4c" style="color:white;">
+                    <th>Company</th>
+                    <th>Name</th>
+                    <th>Technology</th>
+                    <th>Deployment</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <!-- SJ6240318 - Projects done in Sanmina -->
+                <tr class="rowId">
+                    <td rowspan="2">Sanmina</td>
+                    <td>iART</td>
+                    <td>
+                        <a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/" target="_blank">Raspberry pi 3, Python 3</a>
+                    </td>
+                    <td>Medical lab</td>
+                </tr>
+                <tr class="rowId">
+                    <td>G6PD</td>
+                    <td>
+                        <a href="http://www.st.com/en/microcontrollers/stm32f401re.html" target="_blank">STM32F401RE ARM Cortex-M4</a>
+                    </td>
+                    <td>Hospital or clinic lab</td>
+                </tr>
+
+                <!-- SJ6240318 - Projects done in Aztech -->
+                <tr class="rowId">
+                    <td rowspan="4">Aztech Technologies</td>
+                    <td>LED Downlight</td>
+                    <td>ZigBee Light Link - TI MCU</td>
+                    <td>Lobby, Office, House</td>
+                </tr>
+                <tr class="rowId">
+                    <td>Intelligent Multiple Switch</td>
+                    <td>
+                        <a href="http://www.ti.com/lit/ds/sprs802/sprs802.pdf" target="_blank">TI low bit rate power line modem</a>
+                    </td>
+                    <td>Office, Multi-stories apartment building</td>
+                </tr>
+                <tr class="rowId">
+                    <td>Large Scale Lighting System</td>
+                    <td>TI low bit rate power line modem</td>
+                    <td>Office, Multi-stories apartment building</td>
+                </tr>
+                <tr class="rowId">
+                    <td>
+                        <a href="http://www.youtube.com/watch?v=7ICbjFxcoVk" target="_blank">Stage Lighting System</a>
+                    </td>
+                    <td>
+                        <a href="https://en.wikipedia.org/wiki/DMX512" target="_blank">DMX512</a>
+                        and
+                        <a href="https://en.wikipedia.org/wiki/RDM_(lighting)" target="_blank">RDM</a>
+                    </td>
+                    <td>Shopping center, Musical theater</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="4" bgcolor="black" style="color:white;">TBD</td>
+                </tr>
+            </tfoot>
+
+          </table>
+        </section>
+        <br>
+        <hr>
+
+        <section class="videoArea">
+            <h2>Videos</h2>
+            <!-- SJ4150318 - Building video control -->
+            <video id="myVideo" width="845" height="475" controls />
+                <source src="./video/google_bicycle.mp4" type="video/mp4"/>
+                <p>Your browser doesn't support videos, please update.</p>
+            </video>
+            <hr>
+        </section>
+    </div>
+
+    <!-- SJ5160318 - Footer section -->
+    <footer id="footerInfo">
+        <small>Suilarso Japit &nbsp; &#124; &nbsp; Winnipeg, Manitoba, Canada - 
+            <span style="color:rgb(240, 16, 16);">Last Updated: March 2018</span>
+        </small>
+    </footer>
+</body>
+</html>
